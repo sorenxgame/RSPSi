@@ -1,7 +1,22 @@
 # RSPSi Map Editor
-# Running
+# Build
 1. Follow the instructions in the `Setup` section below.
 2. ```bash
+   cd Plugins
+   gradle buildAndMove
+   ```
+3. ```bash
+   cd Editor
+   gradle build
+   ```
+   
+### Creating a Distribution
+1. ```bash
+   cd Editor
+   gradle distZip
+   ```
+# Run
+1. ```bash
    gradle run
    ```
 # Setup
