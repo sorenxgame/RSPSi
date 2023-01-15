@@ -103,6 +103,12 @@ public class LauncherWindow extends Application {
 
 				File inactiveFolder = new File(PLUGINS_PATH + "inactive" + File.separator);
 				File activeFolder = new File(PLUGINS_PATH + "active" + File.separator);
+				if(!inactiveFolder.exists()) {
+					inactiveFolder.mkdirs();
+				}
+				if(!activeFolder.exists()) {
+					activeFolder.mkdirs();
+				}
 				
 				File oldPluginFile = new File(inactiveFolder,  pluginName + ".jar");
 				File newPluginFile = new File(activeFolder, pluginName + ".jar");

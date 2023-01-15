@@ -17,6 +17,7 @@
    ```
 # Run
 1. ```bash
+   cd Editor
    gradle run
    ```
 # Setup
